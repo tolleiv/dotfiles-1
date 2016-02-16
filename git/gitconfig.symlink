@@ -9,6 +9,8 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	tree = log --graph --pretty=oneline --decorate
 [color]
         diff = auto
         status = auto
@@ -17,6 +19,10 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+	pager = less -FRSX
+	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore_global
+	editor = vim
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -31,3 +37,4 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+
