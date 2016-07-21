@@ -2,13 +2,18 @@ cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'homebrew/completions'
+
+cask 'xquartz'
 
 brew 'ack'
 brew 'coreutils'
 brew 'go'
+brew 'gawk'
 brew 'grc'
 # brew 'imagemagick'
 brew 'jp2a'
+brew 'jq'
 brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
 brew 'openssl'
@@ -24,17 +29,13 @@ brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
 
+
+
 cask '1password'
-# cask 'adium'
-# cask 'atom'
 cask 'firefox'
-# cask 'garmin-express'
 cask 'google-chrome'
-# cask 'handbrake'
-# cask 'mapbox-studio'
-# cask 'seashore'
-# cask 'slack'
-# cask 'steam'
-# cask 'transmission'
-# cask 'tunnelbear'
 cask 'vlc'
+
+cask 'docker'
+cask 'docker-compose'
+brew 'docker-completion'
