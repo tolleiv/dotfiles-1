@@ -28,8 +28,9 @@ brew 'spark'
 brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
-
-
+brew 'gnu-indent', args: ['with-default-names']
+brew 'gnu-sed', args: ['with-default-names']
+brew 'gnu-tar, args: ['with-default-names']
 
 cask '1password'
 cask 'firefox'
