@@ -2,7 +2,6 @@ cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
-tap 'homebrew/completions'
 
 cask 'xquartz'
 
@@ -14,6 +13,7 @@ brew 'grc'
 # brew 'imagemagick'
 brew 'jp2a'
 brew 'jq'
+brew 'yq'
 brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
 brew 'openssl'
@@ -30,13 +30,13 @@ brew 'wget'
 brew 'youtube-dl'
 brew 'gnu-indent', args: ['with-default-names']
 brew 'gnu-sed', args: ['with-default-names']
-brew 'gnu-tar, args: ['with-default-names']
+brew 'gnu-tar', args: ['with-default-names']
 
-cask '1password'
-cask 'firefox'
-cask 'google-chrome'
-cask 'vlc'
+#cask '1password'
+#cask 'firefox'
+#cask 'google-chrome'
+#cask 'vlc'
 
 cask 'docker'
-cask 'docker-compose'
+brew 'docker-compose'
 brew 'docker-completion'
